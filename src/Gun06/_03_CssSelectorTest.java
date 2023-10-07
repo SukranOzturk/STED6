@@ -1,15 +1,14 @@
 package Gun06;
 
 import Utlity.BaseDriver;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import org.junit.Assert;
-import org.junit.Test;
 
 public class _03_CssSelectorTest extends BaseDriver {
-
-    @Test  // sen test sin.main e ihtiyacın yok
+    @Test  // Sen testsin main e ihtiyacın yok.
     public void Test1()
     {
         driver.get("http://demo.seleniumeasy.com/basic-first-form-demo.html");
@@ -23,12 +22,9 @@ public class _03_CssSelectorTest extends BaseDriver {
 
         WebElement msg=driver.findElement(By.cssSelector("[id='display']"));
 
-        Assert.assertTrue("Aranılan mesaj bulunamadı", msg.getText().contains(mesaj)); // içindeki TRUE mu değil mi
-        // TRUE is ehiç mesaj verme , değilse hata mesajı ver
+       Assert.assertTrue(msg.getText().contains(mesaj)); // içindeki TRUE mu değil mi?
+        // TRUE ise hiç mesaj verme, değilse hata mesajı ver.
 
         BekleVeKapat();
     }
-
-
-
 }

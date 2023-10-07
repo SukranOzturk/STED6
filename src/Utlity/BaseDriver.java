@@ -32,8 +32,6 @@ public class BaseDriver {
     }
 
 }
-
-
 //  Java hızlı - Web sitesi yavaş
 // java elemanı bulmaya çalışıyor, ama web sitesi hala yuklenıyor. site yüklenmeden java bulamadım dıyor bıtırıyor,
 // Web elementı bulmaya calıstıgında (FindElement/s)

@@ -18,12 +18,11 @@ public class _02_CssSelector extends BaseDriver {
 
         WebElement msg=driver.findElement(By.cssSelector("[id='display']"));
 
-        if (msg.getText().contains(mesaj))
+        if (msg.getText().contains(mesaj)) // mesajın yanında başka kelimeler olduğu için contains dedik.
             System.out.println("TEST PASSED");
         else
             System.out.println("TEST FAILED ....");
 
         BekleVeKapat();
     }
-
 }
